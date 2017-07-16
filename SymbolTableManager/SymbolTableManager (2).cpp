@@ -43,18 +43,20 @@ int main()
 		previoustoken=tokenvalue;
 		getline(input,inputvalue,' ');
 		getline(token,tokenvalue,' ');
+		// Checks if Token is Identifier and Function then add entry for that in Symbol Table
 		if(tokenvalue=="id")
 		{
-			ST t;
-			t.Type="";
+			ST temp;
+			temp.Type="";
 			if(previoustoken=="function")
 			{
-				t.Desc="Function";
+				temp.Desc="Function";
 			}
 			else
-			t.Desc="Variable";
-			SymbolTable.insert(T::value_type( inputvalue,t));	
+			temp.Desc="Variable";
+			SymbolTable.insert(T::value_type( inputvalue,temp));	
 		}
+		// Store Type of Identifier or Function Return type in Symbol Table 
 		else if(tokenvalue=="integer"||tokenvalue=="real")
 		{
 			
@@ -77,6 +79,7 @@ int main()
 				}
 			}
 		}
+		// Deals the variables and function with no types
 		else if (tokenvalue==";")
 		{
 			for(auto elem :SymbolTable )
