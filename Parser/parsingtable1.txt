@@ -1,0 +1,34 @@
+	program	id	(	)	;	,	var	:	array	[	num	]	of	integer	real	function	procedure	begin	end	assignop	if	then	else	while	do	addop	mulop	relop	not	+	-	$	.
+Pro	program id ( IL ) ; DC SPD CS .	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+IL	_	id ILP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+ILP	_	_	_	$	_	, id ILP	_	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+DC	_	_	_	_	_	_	DCP	_	_	_	_	_	_	_	_	$	$	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+DCP	_	_	_	_	_	_	var IL : T ; DCP	_	_	_	_	_	_	_	_	$	$	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+T	_	_	_	_	_	_	_	_	array [ num . . num ] of ST ;	_	_	_	_	ST	ST	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+ST	_	_	_	_	_	_	_	_	_	_	_	_	_	integer	real	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+SPD	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	SPDP	SPDP	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+SPDP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	SPDN SPDP	SPDN SPDP	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+SPDN	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	SPH DC CS	SPH DC CS	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+SPH	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	function id A : ST ;	procedure id A ;	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+A	_	_	( PL )	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+PL	_	IL : T PLP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+PLP	_	_	_	$	;  IL : T PLP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+CS	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	begin OS end	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+OS	_	SL	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	SL	$	_	SL	_	_	SL	_	_	_	_	_	_	_	_	_
+SL	_	S SLP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	S SLP	_	_	S SLP	_	_	S SLP	_	_	_	_	_	_	_	_	_
+SLP	_	_	_	_	; S SLP	_	_	_	_	_	_	_	_	_	_	_	_	_	$	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+S	_	id VPS	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	CS	_	_	if E then S else S	_	_	while E do S	_	_	_	_	_	_	_	_	_
+VPS	_	_	PSP	_	$	_	_	_	_	VP assignop E	_	_	_	_	_	_	_	_	$	VP assignop E	_	_	$	_	_	_	_	_	_	_	_	_	_
+VP	_	_	_	_	_	_	_	_	_	[ E ]	_	_	_	_	_	_	_	_	_	$	_	_	_	_	_	_	_	_	_	_	_	_	_
+PSP	_	_	( EL )	_	$	_	_	_	_	_	_	_	_	_	_	_	_	_	$	_	_	_	$	_	_	_	_	_	_	_	_	_	_
+E	_	SE EP	SE EP	_	_	_	_	_	_	_	SE EP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	SE EP	SE EP	SE EP	_	_
+EP	_	_	_	$	$	$	_	_	_	_	_	$	_	_	_	_	_	_	$	_	_	$	$	_	$	_	_	relop SE	_	_	_	_	_
+EL	_	E ELP	E ELP	_	_	_	_	_	_	_	E ELP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	E ELP	E ELP	E ELP	_	_
+ELP	_	_	_	$	_	, E ELP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+SE	_	TRM SEP	TRM SEP	_	_	_	_	_	_	_	TRM SEP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	TRM SEP	SIGN TRM SEP	SIGN TRM SEP	_	_
+SEP	_	_	_	$	$	$	_	_	_	_	_	$	_	_	_	_	_	_	$	_	_	$	$	_	$	addop TRM SEP	_	$	_	_	_	_	_
+TRM	_	FACT TRMP	FACT TRMP	_	_	_	_	_	_	_	FACT TRMP	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	FACT TRM	_	_	_	_
+TRMP	_	_	_	$	$	$	_	_	_	_	_	$	_	_	_	_	_	_	$	_	_	$	$	_	$	$	mulop FACT TRMP	$	_	_	_	_	_
+FACT	_	id FACTP	( E )	_	_	_	_	_	_	_	num	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	not FACT	_	_	_	_
+FACTP	_	_	( EL )	$	$	$	_	_	_	_	_	$	_	_	_	_	_	_	$	_	_	$	$	_	$	$	$	$	_	_	_	_	_
+SIGN	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	+	-	_	_

@@ -1,0 +1,1 @@
+program id ( id , id , id ) ; var id , id : array [ num . . num ] of integer ; ; function id ( id : integer ) : real ; begin if ( id ) then id else id assignop id end begin while ( id ) do id assignop id mulop id addop id end .
