@@ -3,11 +3,13 @@
 #include <fstream>
 #include<map>
 using namespace std;
+//Data Structure that store information that needed for variable or function
 struct ST
 {
 	string Type;
 	string Desc;
 };
+// Map Variable or function Name to Data Structure to directly variable or function name to symbol Table entry
 typedef map <string, ST > T;
 int main()
 {
@@ -17,11 +19,13 @@ int main()
 	ifstream token;
 	string previoustype;
 	input.open("input.txt");
+	//Check if Code file exists
 	if(!input.is_open())
 	{
 		cout << "Unable to open input file";
 		return 0;
 	}
+	//Check if Token File exists
 	token.open("token.txt");
 	if(!token.is_open())
 	{
@@ -32,6 +36,8 @@ int main()
 	string previoustoken;
 	string pretoken;
 	int prepos;
+	//Read Data from Input file and corresponding token entry to get information for Symbol Table
+	// When a new variable or function comes. Store its relative information in Symbole Table
 	while(!input.eof())
 	{
 		previoustoken=tokenvalue;
@@ -92,6 +98,7 @@ int main()
 			}
 		}
 	}
+	// Prints the Symbol Table 
 	cout<<"Name "<<"......|"<<" Type .....|"<<" Descrip "<<endl;
 	for(auto elem :SymbolTable )
 	{
